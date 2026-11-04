@@ -110,6 +110,7 @@ def fillSearchPage(results: list, base: str, query: str):
     base = base.replace("$BOX", f'value="{query}"')
 
     searchResultElement = ""
+    print(results)
     for result in results:
         searchResultElement += f"""<a class="track-item" href="{result["url"]}">
             <img src="{result["cover"]}">
