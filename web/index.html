@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WizardLyrics</title>
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <link rel="icon" href="/favicon.svg">
+        <style>html{background-color:#050505;color:#e7e7e7;--accent:#aeffd9;--accent-translucent:#aeffd980;display:flex;justify-content:center;flex-direction:row}body{font-family:'Inter', sans-serif;margin:2rem 0 0;width:70vw;@media screen and (width <= 900px){width:95vw}}h1{font-family:'Inter', sans-serif;font-size:4.4rem;margin:0;color:var(--accent)}h2,h3{font-family:'Inter', sans-serif}.search-container{display:flex;flex-direction:row;@media screen and (width <= 900px){flex-direction:column}width:100%}button,input{font-size:1.5rem;font-family:inherit;color:inherit;height:44px;padding:0;margin:0;background-color:transparent;border:solid 1px var(--accent);border-radius:8px}button#search{width:15%;margin:1px 1px 1px 3%;background-color:var(--accent);color:#050505;box-shadow:0 0 0 0 transparent;transition:0.3s;@media screen and (width <= 900px){width:90vw;margin:0}}button#search:hover{box-shadow:0 0 4px 4px var(--accent-translucent);cursor:pointer}input#search-bar{width:82%;padding-left:6px;@media screen and (width <= 900px){width:90vw;margin-bottom:8px}}</style>
+        <script>function search(){var q=document.getElementById("search-bar").value;window.location.href=["/search?q=",encodeURIComponent(q)].join("")};window.onload=function(){document.getElementById("search").onclick=search;document.getElementById("search-bar").onkeydown=function(event){if(event.key==="Enter"){search()}}};</script>
+    </head>
+
+    <body>
+        <h1>Wizard</h1>
+        <h3>An open-source, privacy respecting frontend for Genius.</h3>
+
+        <div class="search-container">
+            <input type="text" id="search-bar">
+            <button type="button" id="search">Search</button>
+        </div>
+    </body>
+</html>
