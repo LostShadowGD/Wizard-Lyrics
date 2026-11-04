@@ -1,0 +1,15 @@
+[project]
+name = "wizard-lyrics"
+version = "1.0.0"
+dependencies = [
+  "requests",
+  "fastapi",
+  "beautifulsoup4",
+  "uvicorn"
+]
+
+[tool.vercel]
+entrypoint = "main:app"
+
+[tool.fastapi]
+entrypoint = "main:app"
